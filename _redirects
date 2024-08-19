@@ -1,2 +1,0 @@
-# Redirect all dynamic routes to the SSR function
-/*    /.netlify/functions/ssr   200

@@ -1,13 +1,11 @@
 import dynamic from "next/dynamic";
-import React from "react";
+import React, { lazy } from "react";
 
 // Dynamically import the SSR page from the remote app
 // const RemoteSSRPage = dynamic(() => import("remoteApp/RemoteApp"), {
 //   ssr: true, // Ensure SSR is enabled
 // });
-const RemoteSSRPage = dynamic(() => import("remoteApp/RemoteApp"), {
-  // Ensure SSR is enabled
-});
+const RemoteSSRPage = lazy(() => import("remoteApp/RemoteApp"));
 
 // Create a wrapper component to use the SSR page
 const HostSSRPage = (props: any) => {
