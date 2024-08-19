@@ -8,7 +8,7 @@ module.exports = {
         filename: "static/chunks/remoteEntry.js",
         remotes: {
           remoteApp:
-            "remoteApp@http://localhost:3000/_next/static/chunks/remoteEntry.js", // Expose your SSR page
+            "remoteApp@https://aquamarine-rolypoly-b9d699.netlify.app//_next/static/chunks/remoteEntry.js", // Expose your SSR page
         },
 
         shared: {
