@@ -2,6 +2,7 @@ const { NextFederationPlugin } = require("@module-federation/nextjs-mf");
 
 module.exports = {
   webpack(config, options) {
+    config.output.publicPath = "auto";
     config.plugins.push(
       new NextFederationPlugin({
         name: "hostApp",
